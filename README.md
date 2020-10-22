@@ -59,7 +59,7 @@
     <C-b %>
     В консоли: tmux split-window -v
 
-##### Переход между панелей
+##### Переход между панелями
     <C-b стрелки курсора> // либо режим мыши
 
 ##### Изменение размеров панелей
@@ -97,7 +97,7 @@
 
 ____
 # Шапаргалка по использованию _Vim_
-[Исходный ресурс]((http://highclouds.ru/2019/02/14/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-%D0%B2-vim/))
+[Исходный ресурс](http://highclouds.ru/2019/02/14/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-%D0%B2-vim/)
 #### Основы
     hjkl                            перемещение в разные стороны
     i                               режим вставки
@@ -210,13 +210,19 @@ ____
         
 # Linux
 
+    lsb_release -a                                      Название и версия
+    
     du -hs * | sort -rh | head -5                       список самых больших файлов в директории
     
     cat /etc/passwd
     
     ifconfig
-    nginx -t
+    nginx -t                                            Проверка синтаксиса конфига
     nginx -s reload
+    
+    apache2ctl restart
+    apache2ctl -t                                       Проверка синтаксиса конфига
+    apache2ctl -S                                       Список всех виртуальных хостов
     
     find . -name php.ini
     lsof -i :80 пинг порта
@@ -235,12 +241,12 @@ ____
     git ls-remote origin
     git ls-remote .
     
-    git checkout -b remote_branch origin/remote_branch      новая ветка из ремоута
+    git checkout -b remote_branch origin/remote_branch                  новая ветка из ремоута
     
     git remote set-url origin git@github.com:USERNAME/REPOSITORY.git    новый url адрес origin
 
 # Composer
 
-    composer update --ignore-platform-reqs  обновить композер без зависимостей в контейнере
+    composer update --ignore-platform-reqs                              обновить композер без зависимостей в контейнере
     
     composer dump-autoload --optimize
