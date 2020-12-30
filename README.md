@@ -244,7 +244,13 @@ ____
     git checkout -b remote_branch origin/remote_branch                  новая ветка из ремоута
     
     git remote set-url origin git@github.com:USERNAME/REPOSITORY.git    новый url адрес origin
-
+    
+    git branch -D branch_name                                           удалить локальную ветку
+    git push origin :branch_name                                        удалить удалённую ветку
+    
+    git commit --amend                                                  обновление предыдущего коммита
+    git push --force origin branch_name                                 push с изменением (принудительным) уже существующих в origin коммитов (истории)
+    git push --all origin                                               запушить все ветки из origin
 # Composer
 
     composer update --ignore-platform-reqs                              обновить композер без зависимостей в контейнере
