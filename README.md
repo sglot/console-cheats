@@ -241,6 +241,8 @@ ____
     git ls-remote origin
     git ls-remote .
     
+    git rm -r --cached ./directory                                      удалить папку из репозитория
+    
     git checkout -b remote_branch origin/remote_branch                  новая ветка из ремоута
     
     git remote set-url origin git@github.com:USERNAME/REPOSITORY.git    новый url адрес origin
